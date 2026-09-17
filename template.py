@@ -4,7 +4,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO,format='[%(asctime)s] : %(message)s:')
 
-project_name = "CNN Classifier"
+project_name = "CNNClassifier"
 
 list_of_files = [
     ".github/workflows/.gitkeep",
@@ -23,6 +23,8 @@ list_of_files = [
     "setup.py",
     "research/trials.ipynb",
     "templates/index.html",
+    ".gitignore",
+    ".env",
 ]
 
 for filepath in list_of_files:
@@ -40,4 +42,3 @@ for filepath in list_of_files:
     else:
         logging.info(f"{filename} already exists")
 
-        
